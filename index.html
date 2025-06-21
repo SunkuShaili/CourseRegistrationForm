@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/spline-sans" rel="stylesheet">
+                
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td> <label for="FirstName">FirstName</label></td>
+                    <td><input type="text" name="FirstName" id="" placeholder="Ex:Shaili" required><p>Enter your name</p></td>
+                    
+                </tr>
+
+                <tr>
+                    <td><label for="Surname">Surname</label></td>
+                    <td><input type="text" name="Surname" id="" placeholder="Ex:Sunku" optional><p>Enter your Surname</p></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Mobile Number">Mobile Number</label></td>
+                    <td><input type="tel" name="Mobile Number" id="" placeholder="Ex:6300000008" required><p>Enter your MobileNo</p></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Email">Email</label></td>
+                    <td><input type="email" name="Email" id="" placeholder="Ex:sunku@gmail.com" required><p>Enter your Email</p>
+                        <img src="./tick.png" alt="" id="correct">
+                        <img src="./cross.png" alt="" id="wrong">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="Password">Password</label></td>
+                    <td><input type="password" name="Password" id="" placeholder="Ex:Shaili@2003" required><p>Enter a strong password</p></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Confirm Password">Confirm Password</label></td>
+                    <td><input type="password" name="Confirm Password" id="" placeholder="Ex:Shaili@2003" required><p>Enter your confirmed password</p></td>
+                </tr>
+
+                <tr>
+                    <td><label for="DOB">DOB</label></td>
+                    <td><input type="date" name="DOB" id="" required><p>Enter your Date of Birth</p>
+                        
+                </td>
+                </tr>
+
+                 <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number" name="age" id="age" min="18" max="100" required><p>Enter age between 18 and 100</p>
+                        <img class="valid" src="./tick.png" alt="" >
+                        <img  class="invalid" src="./cross.png" alt="" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="Gender">Gender</label></td>
+                    <td><input type="radio" name="Gender" value="Male">
+                        <label for="">Male</label>
+                        <input type="radio" name="Gender" value="Female">
+                        <label for="">Female</label>
+                        <input type="radio" name="Gender" value="Others">
+                        <label for="">Others</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Select Country</label></td>
+                    <td><select name="Select Country" id="">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Germany">Germany</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Upload Picture</label></td>
+                    <td><input type="file" name="Upload Picture" id="" required></td>
+                </tr>
+
+                <tr>
+                    <td><input type="reset" name="reset" id=""><br></td>
+                </tr>
+            </table>
+        </fieldset>
+<br><br> 
+        <fieldset>
+            <legend>Course Selection</legend>
+            <label for="Select Course">Select Course</label><br>
+            <select>
+                <option value="PFWD">Python Full Stack</option>
+                <option value="JFWD">Java Full Stack</option>
+                <option value="MERN"> Core Java</option>
+                <option value="DataScience">Python for DataScience</option>
+            </select><br>
+
+            <label for="Delivery Mode">Delivery Mode</label>
+            <input type="radio" name="Delivery Mode" value="Online">
+            <label for="">Online</label>
+            <input type="radio" name="Delivery Mode" value="Offline">
+            <label for="">Offline</label> <br><br>
+
+            <label for="institute">Institute Name</label>
+            <input type="text" name="institute" id="institute" value="TAP ACADEMY" readonly><br><br>
+            <label for="coding">Choose your present Coding knowledge level</label><br>
+            <input type="range" name="coding" id="coding" min="1" max="5"><br>
+
+            <label for="Comments">Comments</label><br>
+            <textarea name="Comments" id="" cols="50px" rows="10px"></textarea><br>
+
+        </fieldset><br>
+        <input type="submit" name="" id="">
+    </form>
+</body>
+</html>
